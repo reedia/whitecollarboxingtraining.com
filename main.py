@@ -52,8 +52,8 @@ class WhatsInvolvedHandler(webapp2.RequestHandler):
 class ClassesHandler(webapp2.RequestHandler):
     def get(self):
         title = "Classes"
-        subtitle = "Offering a variety of boxing classes"
-        description = "We do a range of boxing classes and fitness sessions suitable for everyone. Throughout the week there are regular training sessions to help work on your fitness and conditioning as well as boxing training sessions."
+        subtitle = "Offering a variety of boxing and fitness classes"
+        description = "We do a range of boxing classes and fitness sessions suitable for everyone. Throughout the week there are multiple types of training sessions to help work on your fitness and conditioning."
         keywords = "collar boxing,white collar,boxing training,boxing training sessions,boxing classes,fitness sessions,training sessions,fitness and conditioning"
         banner = ""
         template_vars = {"title":title,"subtitle":subtitle,"description":description,"keywords": keywords,"banner": banner}
