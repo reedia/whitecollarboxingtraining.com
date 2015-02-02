@@ -40,6 +40,11 @@ handlers:
   mime_type: video/ogg
   static_files: videos\1
   upload: videos(.*\.(ogv))
+  
+- url: /(google1a782dc66bbc2f73\.html)
+  static_files: \1
+  upload: /(google1a782dc66bbc2f73\.html)
+  
 
 - url: .*
   script: main.app
