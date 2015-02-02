@@ -53,8 +53,8 @@ class ClassesHandler(webapp2.RequestHandler):
     def get(self):
         title = "Classes"
         subtitle = "Offering a variety of boxing and fitness classes"
-        description = "We do a range of boxing classes and fitness sessions suitable for everyone."
-        keywords = "collar boxing,white collar,boxing training,boxing training sessions,boxing classes,fitness sessions,training sessions,fitness and conditioning"
+        description = "Following a well-structured conditioning program we will help you work on your fitness and your technique"
+        keywords = "collar boxing,white collar,conditioning program,boxing training,boxing classes,fitness sessions,training sessions,fitness and conditioning"
         banner = ""
         template_vars = {"title":title,"subtitle":subtitle,"description":description,"keywords": keywords,"banner": banner}
         template = JINJA_ENVIRONMENT.get_template("classes.html")
