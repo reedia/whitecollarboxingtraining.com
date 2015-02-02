@@ -53,7 +53,7 @@ class ClassesHandler(webapp2.RequestHandler):
     def get(self):
         title = "Classes"
         subtitle = "Offering a variety of boxing and fitness programs"
-        description = "Following a well-structured conditioning program we will help you work on your fitness and your boxing techniques"
+        description = "Following a well-structured conditioning program we will help you work on your fitness and your techniques"
         keywords = "collar boxing,white collar,conditioning program,boxing training,boxing techniques,boxing and fitness programs,onetoone lessons"
         banner = ""
         template_vars = {"title":title,"subtitle":subtitle,"description":description,"keywords": keywords,"banner": banner}
