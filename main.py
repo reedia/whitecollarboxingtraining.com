@@ -49,6 +49,17 @@ class WhatsInvolvedHandler(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template("whats-involved.html")
         self.response.write(template.render(template_vars))
 
+class ClassesHandler(webapp2.RequestHandler):
+    def get(self):
+        title = "Classes"
+        subtitle = "Offering a variety of boxing training levels"
+        description = "Our trainers will help you understand the basics of white-collar boxing and guide you through each step one-on-one until you master each skill"
+        keywords = "collar boxing,white collar,boxing training,training levels,skill set,intense training,london uk,beginner training,training advanced"
+        banner = ""
+        template_vars = {"title":title,"subtitle":subtitle,"description":description,"keywords": keywords,"banner": banner}
+        template = JINJA_ENVIRONMENT.get_template("classes.html")
+        self.response.write(template.render(template_vars))
+
 class GetInTouchHandler(webapp2.RequestHandler):
     def get(self):
         title = "Get in touch"
@@ -65,5 +76,6 @@ app = webapp2.WSGIApplication([
     ('/story.html', StoryHandler),
     ('/trainers.html', TrainersHandler),
     ('/whats-involved.html', WhatsInvolvedHandler),
+    ('/classes.html', ClassesHandler),
     ('/get-in-touch.html', GetInTouchHandler),
 ], debug=True)
