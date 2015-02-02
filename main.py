@@ -51,7 +51,7 @@ class WhatsInvolvedHandler(webapp2.RequestHandler):
 
 class ClassesHandler(webapp2.RequestHandler):
     def get(self):
-        title = "Classes"
+        title = "Group and One-to-one classes"
         subtitle = "Offering a wide range of group and one to one workshops for adults and children"
         description = "Following a well-structured conditioning program we will help you work on your fitness and your boxing techniques"
         keywords = "collar boxing,white collar,conditioning program,boxing training,boxing workshops,boxing and fitness programs,onetoone lessons"
