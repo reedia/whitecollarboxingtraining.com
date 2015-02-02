@@ -15,12 +15,17 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://whitecollarboxingtraining.com/whats-involved.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://whitecollarboxingtraining.com/trainers.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://whitecollarboxingtraining.com/whats-involved.html</loc>
+  <loc>http://whitecollarboxingtraining.com/classes.html</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
