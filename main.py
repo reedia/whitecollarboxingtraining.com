@@ -52,7 +52,7 @@ class WhatsInvolvedHandler(webapp2.RequestHandler):
 class ClassesHandler(webapp2.RequestHandler):
     def get(self):
         title = "Classes"
-        subtitle = "Offering a wide range of courses for adults and children"
+        subtitle = "Offering a wide range of classes for adults and children"
         description = "Following a well-structured conditioning program we will help you work on your fitness and your boxing techniques"
         keywords = "collar boxing,white collar,conditioning program,boxing training,boxing techniques,boxing and fitness programs,onetoone lessons"
         banner = ""
