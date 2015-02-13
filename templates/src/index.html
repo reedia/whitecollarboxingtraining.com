@@ -70,14 +70,13 @@
                 <main role="main">
                     <div>
                         <section>
-                            <h2>{{ subtitle }}
+                            <h2>{{ subtitle }} 
                             <script language="javascript" type="text/javascript">
                             //<![CDATA[
-                            document.write('<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button><div id="status"></div>');
-                            //]]>
-                            </script>
-                            </h2>
-                            <a href="tel:+447749116927" class="callbutton"><span><strong>Call Now<br/>07749 116927</strong></span></a> {{ banner }} {% block content %}
+								document.write('<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>');
+							//]]>
+							</script>
+							</h2><a href="tel:+447749116927" class="callbutton"><span><strong>Call Now<br/>07749 116927</strong></span></a> {{ banner }} {% block content %}
                             <h3>Release Your Inner Athlete with White Collar Boxing Training!</h3>
                             <p>Offers premier world class coaching for professionals throughout London and the UK.</p>
                             <p>We help professionals suit up and properly prepare for their big fight regardless of their current ability or skill set. We welcome both men and women into our rings, and extend customised sessions to help our clients learn the ropes the right way. White-collar professionals can step into our facilities and learn how to train just like a professional boxer with our highly skilled athletic trainers. Our goal is to help each of our clients learn how to become a real boxer with advanced methods that are sure to improve their physical strength and agility.</p> {% endblock %} </section>
@@ -188,10 +187,12 @@
         FB.api('/me', function(response) {
             console.log('Successful login for: ' + response.name);
             document.getElementById('status').innerHTML =
-                'Welcome, ' + response.name + '!';
+                'Thanks for logging in, ' + response.name + '!';
         });
     }
     </script>
+    <!-- (function(e, a, f) { var c, b = e.getElementsByTagName(a)[0]; if (e.getElementById(f)) { return } c = e.createElement(a); c.id = f; c.src = "//connect.facebook.net/en_US/sdk.js"; b.parentNode.insertBefore(c, b) }(document, "script", "facebook-jssdk"));
+</script> -->
 </body>
 
 </html>
